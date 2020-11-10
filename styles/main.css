@@ -139,7 +139,7 @@ html,body{
 .services .container .search input{
     background-color: #d4d4d4;
     border-radius: .8rem;
-    padding: .8rem .6rem ;
+    padding: 1rem .6rem ;
     border: none;
     font-size: 1.4rem;
     outline: none;
@@ -148,7 +148,7 @@ html,body{
     background: var(--color-base-red);
     border-radius: .8rem;
     color: #ffffff;
-    padding: .8rem 4rem;
+    padding: 1rem 4rem;
     transition: .6s;
     font-size: 1.4rem;
 } 
@@ -284,8 +284,11 @@ footer .col .icons i{
     .banner .container img{
         width: 70%;
     }
-
+    .comments .container{
+        margin: 0rem 0; 
+    }
     .services .container img{
+        width: 80%;
         order: 1;
         position: static;
     }
