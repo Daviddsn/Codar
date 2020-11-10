@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,300;0,700;1,700&display=swap');
+
+:root{
+    --color-base-red:#D6000D;
+    --color-text-black: #141414;
+    --colo-base-red-hover:#b8020d;
+
+    font-size: 62.52%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+a{
+    text-decoration: none;
+    color: var(--color-text-black);
+}
+
+ul li{
+    list-style: none;
+}
+
+html,body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif 
+}
+
+
+.cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 2%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cabecalho .container #logo{
+    font-size: 3.2rem;
+    color: var(--color-base-red);
+    font-style: italic;
+    flex: 0 1 250px;
+}
+.cabecalho .container #logo span{
+    color: var(--color-text-black);
+}
+
+.cabecalho .container .menu ul li{
+    display: inline-block;
+   
+    padding: .8rem 1rem;
+}
+.cabecalho .container .menu ul li+li{
+    margin-left: .6rem;
+}
+
+.cabecalho .container .menu ul li a{
+    font-size: 1.6rem;
+}
+
+.menu .login a{
+    padding: .8rem 4rem;
+}
+.btn a{
+    background: var(--color-base-red);
+    border-radius: 2rem;
+    color: #ffffff;
+    padding: .8rem 4rem;
+    transition: .6s;
+}
+.btn a:hover{
+    background-color: var(--colo-base-red-hover);
+}
+
+/* ============= BANNER ================ */
+.banner .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0 20rem;
+}
+
+.banner .container img{
+    width: 40%;
+}
+
+.banner .container p{
+    font-size: 2.8rem;
+    color: var(--color-text-black);
+    font-weight: 700;
+}
+.banner .container h1{
+    font-size: 7rem;
+    color: var(--color-base-red);
+    margin: .6rem auto 8rem;
+    animation: 3.5s steps(30) 0s 1 normal none running typing, 0.5s step-end 0s infinite normal none running blink-caret;
+}
+.banner .container .btn{
+    font-size: 2.4rem;
+}
+
+.services .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 15rem;
+}
+
+.services .container img{
+    width: 30%;
+    padding-bottom: 4rem;
+    position: relative;
+    top: -100px;
+}
+.services .container  ul li i{
+    display: inline-block;
+    color: var(--color-base-red);
+    margin-right: 2rem; 
+}
+.services .container  ul li{
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+.services .container .search{
+    margin: 2rem 1rem ;
+}
+.services .container .search h3{
+    font-size: 1.8rem;
+    margin: 40px auto 10px;
+}
+.services .container .search input{
+    background-color: #d4d4d4;
+    border-radius: .8rem;
+    padding: .8rem .6rem ;
+    border: none;
+    font-size: 1.4rem;
+    outline: none;
+}
+.services .container .search a{
+    background: var(--color-base-red);
+    border-radius: .8rem;
+    color: #ffffff;
+    padding: .8rem 4rem;
+    transition: .6s;
+    font-size: 1.4rem;
+} 
+.services .container .search a:hover{
+    background-color: var(--colo-base-red-hover);
+}
+
+.comments .container{
+    display: flex ;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 4rem auto; 
+}
+
+.comments .container article{
+    display: flex;
+    background-color: #d4d4d4;
+    margin: .8rem;
+    padding: 2rem 1rem;
+    color: var(--color-text-black);
+    border-radius: .8rem;
+    max-width: 400px;
+}
+.comments .container article .img{
+    height: 48px;
+    width: 48px;
+    background-color: var(--color-base-red);
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+.comments .container article .warraper{
+    width: 80%;
+    justify-items: right;
+}
+.comments .container article .warraper p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.comments .container article .warraper h2{
+    font-size: 1.8rem;
+}
+.comments .container article .warraper span{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10% 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+footer a{
+    color: #ffffff;
+    display: block;
+    margin: .8rem 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+footer .col{
+    margin: 1.5rem;
+}
+footer .col.logo h3{
+    font-size: 3.2rem;
+    font-style: italic;
+
+}
+footer .col h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+footer .col p{
+    font-size: 1.3rem;
+    letter-spacing: .4px;
+    font-weight: 300;
+   
+}
+footer .col .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer .col .icons i{
+    color: var(--color-base-red);
+    font-size: 2.4rem;
+    margin: .8rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .cabecalho .menu ul li.login{
+        display: none;
+    }
+    .cabecalho .container{
+        justify-content: center;
+    }
+    .banner .container {
+        text-align: center;
+    }
+
+    .banner .container p{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+    .banner .container h1{
+        font-size: 4rem;
+    }
+
+    .services .container img{
+        width: 50%;
+    }
+    .services .container .search{
+        margin: 0 auto;
+    }
+    .services .container .search input{
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .services .container .search a{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+  
+}
+@media screen and (max-width:425px){
+    .banner .container img{
+        width: 70%;
+    }
+
+    .services .container img{
+        order: 1;
+        position: static;
+    }
+    .services .container .warraper-services{
+        order: 2;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    footer .logo{
+        text-align: center;
+        width: 100%;
+    }
+  
+}
